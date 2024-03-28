@@ -1,0 +1,46 @@
+package Desafio5;
+
+import java.util.Scanner;
+
+ 
+public class calculadora {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int A;
+        int B;
+
+        double operacao;
+
+        System.out.println("Insira o primeiro numero");
+        A = scan.nextInt();
+
+        System.out.println("Insira o segundo numero");
+        B = scan.nextInt();
+
+        System.out.println("Escolha a operacao: 1 para adicao, 2 para subtracao, 3 para divisao, 4 para multiplicacao");
+        int contas = scan.nextInt();
+
+        switch (contas) {
+            case 1:
+                operacao = A + B;
+                System.out.println("Resultado: " + operacao);
+                break;
+            case 2:
+                operacao = A - B;
+                System.out.println("Resultado: " + operacao);
+                break;
+            case 3:
+                operacao = A / B;
+                System.out.println("Resultado: " + operacao);
+                break;
+            case 4:
+                operacao = A * B;
+                System.out.println("Resultado: " + operacao);
+                break;
+            default:
+                System.out.println("Operador nao reconhecido.");
+                break;
+                
+        }		scan.close();
+    }
+}
