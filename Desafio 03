@@ -1,0 +1,36 @@
+package Desafio03;
+
+import java.util.Scanner;
+public class BatimentoCardiaco {
+
+	public static void main(String[] args) {
+		Scanner coracao = new Scanner (System.in);
+		
+		int Idade;
+		int batimento;
+		
+		System.out.println("escreva sua idade");
+		Idade = coracao.nextInt();
+		
+		System.out.println("coloque seu batimentos");
+		batimento = coracao.nextInt();
+		
+			if(Idade>60 && batimento>150) {
+				System.out.println("URGENTE!");
+			}
+			else if(Idade>60 && batimento<=150){
+					System.out.println("URGENCIA MODERADA");}
+			else if(Idade<=60 && batimento>150){
+						System.out.println("URGENCIA MODERADA");}
+				
+			else if(Idade<=60 && batimento<=150){
+							System.out.println("NAO URGENTE");
+							
+							coracao.close();
+							
+							
+						}
+				
+	}
+
+}
