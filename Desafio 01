@@ -1,0 +1,25 @@
+package Desafio01;
+
+import java.util.Scanner;
+public class Desafio1 {
+
+	public static void main(String[] args) {
+//Escreva um programa  utilize a classe Scanner para obter o nome, idade e o signo de uma pessoa a partir da entrada do usuário. O programa deve então emitir uma mensagem personalizada exibindo o nome, idade e signo em uma frase única//
+		Scanner texto = new Scanner (System.in);
+			String str;
+			String signo;
+			int idade;
+			System.out.println("escreva seu nome");
+			str = texto.nextLine();
+			System.out.println("escreva seu signo");
+			signo = texto.nextLine();
+			System.out.println("escreva sua idade");
+			idade = texto.nextInt();
+			
+			System.out.println("seu nome é " + str + " e seu signo é " + signo +" e sua idade é  " + idade + " anos");
+			
+			texto.close();
+
+	}
+
+}
