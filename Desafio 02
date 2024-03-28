@@ -1,0 +1,30 @@
+package Desafio02;
+
+import java.util.Scanner;
+public class Desafio2 {
+
+	public static void main(String[] args){
+		
+		Scanner numero = new Scanner (System.in);
+		
+			int Nota;
+			
+			System.out.println("escreva sua nota");
+			Nota = numero.nextInt();	
+			
+					if(Nota >= 70) {
+					System.out.println ("APROVADO");				}
+
+					else if(Nota <=69) {
+						System.out.println("REPROVADO");}
+						
+							if(Nota >= 90) {
+								System.out.println("PARABENS ALUNO EXEMPLAR");
+								
+								numero.close();
+							}
+			}				
+		
+	}
+
+
