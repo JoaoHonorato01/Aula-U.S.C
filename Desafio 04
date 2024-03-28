@@ -1,0 +1,34 @@
+package Desafio04;
+
+import java.util.Scanner;
+
+public class PesoIdeal {
+
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("insira sua altura em metros:");
+        double altura = scanner.nextDouble();
+
+        System.out.println("insira seu sexo (m para masculino, f para feminino):");
+        char sexo = scanner.next().charAt(0);
+
+        double pesoIdeal;
+
+        switch (sexo) {
+            case 'm':
+                pesoIdeal = (72.7 * altura) - 58;
+                break;
+            case 'f':
+                pesoIdeal = (62.1 * altura) - 44.7;
+                break;
+            default:
+                System.out.println("Sexo não reconhecido.");
+                pesoIdeal = 0;
+                break;
+        }
+
+        System.out.println("Seu peso ideal é: " + pesoIdeal);
+        scanner.close();
+	}
+}
